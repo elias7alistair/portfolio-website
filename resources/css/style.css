@@ -1,0 +1,282 @@
+/*------------------------------------------- */
+
+/*basic setup*/
+
+/*Orange #e67e22*/
+
+/*------------------------------------------- */
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+
+    background-color: #fff;
+    color: #555;
+    font-family: 'lato','Arial',sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    
+}
+
+/*------------------------------------- */
+/*Reuseable components*/
+/*------------------------------------- */
+
+.row{ 
+    
+max-width: 1140px;
+margin: 0 auto;
+
+}
+
+section{
+    padding:80px 0;
+    
+}
+
+/*---------------------------------------*/
+/*HEADER*/
+/*---------------------------------------*/
+
+header{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/hero.jpg);
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+    
+}
+
+h1,h2{
+    
+ 
+   
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  
+    
+    
+     
+}
+
+h1{
+      margin: 0;
+      margin-bottom: 20px;
+      color: #fff;
+      word-spacing: 4px;
+}
+h2{
+    
+    font-size: 200%;
+    text-align: center;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+    
+}
+
+h3{
+    font-size: 110%;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+h2:after{
+    display: block;
+    height: 2px;
+    background-color:  #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.box{
+    padding: 1%;
+}
+
+/*-----------PARAGRAPH------------*/
+
+.long-copy{
+    
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.hero-text-box {
+
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ 
+}
+
+/*-------------icon big---------------*/
+.icon-big{
+    font-size: 400%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+.logo{
+    height: 85px;
+    width: auto;
+    float: left;
+    margin-top: 32px;
+    padding-bottom: 8px;
+    margin-bottom: 0px;
+    font-family: 'Lato',sans-serif;
+
+}
+
+/*---------------------------------------*/
+/*NAVIGATION*/
+/*---------------------------------------*/
+
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+    
+    
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 60px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 90%;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    
+    border-bottom: 2px solid #e67e22;
+    
+}
+
+/*---------------------------------------*/
+/*Button*/
+/*---------------------------------------*/
+
+
+.btn:link,
+.btn:visited{
+     
+    display: inline-block;
+    font-weight: 300;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    
+}
+
+.btn-full:link,
+.btn-full:visited{
+    color: #fff;
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    margin-right: 15px;
+    
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #cf6d17;
+    
+}
+
+.btn-ghost:link
+,.btn-ghost:visited{
+    color: #e67e22;
+    border: 1px solid #e67e22;
+}
+
+.btn-full:hover,
+.btn-full:active{
+    
+   border: 1px solid #cf6d17;
+    
+}
+
+
+.btn-ghost:hover,
+.btn-ghost:active{
+
+   border: 1px solid #cf6d17;
+   color: #fff;
+
+}
+/*---------------------------------------*/
+/*FEATURES*/
+/*---------------------------------------*/
+    
+.section-features .long-copy{
+    margin-bottom: 20px;
+}
+
+
+
+/*---------------------------------------*/
+/*MEALS*/
+/*---------------------------------------*/
+.section-meals{
+    padding: 0;
+}
+
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+.meals-showcase li{
+    
+    display: block;
+    float: left;
+    width: 25%;
+
+}
+
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: rgb(0, 0, 0);
+}
+.meal-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: opacit 0.5s, transform 0.5s;
+    
+}
+
+.meal-photo img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
